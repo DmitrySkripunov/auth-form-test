@@ -5,5 +5,53 @@
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 1px 1px 10px #555555;
+  padding: 35px 40px;
 }
 
+.logo {
+  color: #3f66ff;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.logo::before {
+  content: '|';
+  background-color: #3f66ff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #ffffff;
+    line-height: 16px;
+    text-indent: 7px;
+}
+
+.header {
+  font-size: 30px;
+  color: #211669;
+  margin-bottom: 40px;
+}
+
+.root > label {
+  color: #6b639e;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.signInButton {
+  margin-top: 23px;
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #201568;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}

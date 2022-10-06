@@ -1,0 +1,10 @@
+.root {
+  height: 50px;
+  border: 2px solid #c0bdd3;
+  color: #6b639e;
+  padding: 0 17px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
