@@ -1,0 +1,58 @@
+
+.owl {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 320px;
+  height: 120px;
+  left: 50%;
+  transform: translate(-50%, -86%);
+}
+
+.owlHead {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -18%);
+}
+
+.owlNose {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-65%, 0);
+}
+
+.wingsBlock {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  bottom: 17px;
+  height: 100px;
+}
+
+.owlLeftWing {
+  position: absolute;
+  left: 25%;
+  top: 34%;
+  transform: rotate(-43deg) translate(-36px, -42px);
+  transform-origin: bottom right;
+  transition: transform 1s ease;
+}
+
+.owlLeftWing.hide {
+  transform: rotate(0deg) translate(0px, 0px);
+}
+
+.owlRightWing {
+  position: absolute;
+  left: 48%;
+  top: 40%;
+  transform: rotate(35deg) translate(64px, 0px);
+  transform-origin: bottom right;
+  transition: transform 1s ease;
+}
+
+.owlRightWing.hide {
+  transform: rotate(0deg) translate(0px, 0px);
+}
