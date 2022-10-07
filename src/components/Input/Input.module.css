@@ -1,10 +1,58 @@
 .root {
+  position: relative;
   height: 50px;
-  border: 2px solid #c0bdd3;
-  color: #6b639e;
-  padding: 0 17px;
-  font-size: 18px;
-  border-radius: 10px;
   box-sizing: border-box;
   width: 100%;
+
+  transition: all 0.6s linear;
+  transition-property: background-image;
+}
+
+.background {
+  height: inherit;
+  width: inherit;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #c0bdd3, tomato);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: background-position 0.6s linear;
+}
+
+.background.active {
+  background: linear-gradient(90deg, #c0bdd3 52% 0, tomato 0 100%);
+}
+
+.input {
+  position: relative;
+  height: 46px;
+  margin-top: 2px;
+  margin-left: 2px;
+  border: none;
+  color: #6b639e;
+  padding: 0 47px 0 17px;
+  font-size: 18px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: calc(100% - 4px);
+  outline: none;
+
+  background-repeat: no-repeat;
+
+  
+}
+
+.input:focus {
+ 
+}
+
+.postfix {
+  width: 20px;
+  height: 20px;
+  stroke: #6e669c;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(0, -50%);
 }

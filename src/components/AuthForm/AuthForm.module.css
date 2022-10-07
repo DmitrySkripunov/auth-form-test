@@ -42,6 +42,10 @@
   font-weight: bold;
 }
 
+.input {
+  margin-bottom: 16px;
+}
+
 .signInButton {
   margin-top: 23px;
   height: 56px;

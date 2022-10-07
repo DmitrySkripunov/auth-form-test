@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import css from './AuthForm.module.css';
 import Owl from '../Owl/Owl';
 import Input from '../Input/Input';
-import lockPasswordSvg from '../../assets/lock-password.svg';
+import LockPassword from '../icons/LockPassword';
+import Envelope from '../icons/Envelope';
 
 function AuthForm() {
   const [hide, setHide] = useState(false);
@@ -26,22 +27,23 @@ function AuthForm() {
       <label htmlFor="email">E-Mail</label>
       <Input
         type="email"
-        marginBottom={16}
+        className={css.input}
         id="email"
         value={email}
         onChange={(evt) => setEmail(evt.target.value)}
-        postfix={lockPasswordSvg}
+        postfix={<Envelope />}
       />
 
       <label htmlFor="password">Password</label>
       <Input
         type="password"
-        marginBottom={16}
+        className={css.input}
         id="password"
         value={password}
         onFocus={() => setHide(true)}
         onBlur={() => setHide(false)}
         onChange={(evt) => setPassword(evt.target.value)}
+        postfix={<LockPassword />}
       />
 
       <button className={css.signInButton}>SIGN IN</button>
