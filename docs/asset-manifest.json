@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8886f4c.css",
-    "main.js": "/static/js/main.2b6cc124.js",
-    "static/js/27.43e0eec9.chunk.js": "/static/js/27.43e0eec9.chunk.js",
-    "index.html": "/index.html"
+    "main.css": "/auth-form-test/static/css/main.d8886f4c.css",
+    "main.js": "/auth-form-test/static/js/main.91de7b92.js",
+    "static/js/27.43e0eec9.chunk.js": "/auth-form-test/static/js/27.43e0eec9.chunk.js",
+    "index.html": "/auth-form-test/index.html"
   },
   "entrypoints": [
     "static/css/main.d8886f4c.css",
-    "static/js/main.2b6cc124.js"
+    "static/js/main.91de7b92.js"
   ]
 }

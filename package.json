@@ -1,5 +1,6 @@
 {
   "name": "5-auth-form-test",
+  "homepage": "https://dmitryskripunov.github.io/auth-form-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
