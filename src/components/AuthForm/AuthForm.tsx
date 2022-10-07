@@ -10,16 +10,8 @@ function AuthForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const submit = (evt: React.SyntheticEvent) => {
-    evt.preventDefault();
-
-    console.log(email, password);
-
-    return false;
-  };
-
   return (
-    <form className={css.root} onSubmit={submit}>
+    <form className={css.root} action="/auth" method="POST">
       <Owl shy={hide} />
       <div className={css.logo}>owl post</div>
       <h1 className={css.header}>Log In to Owl Post</h1>

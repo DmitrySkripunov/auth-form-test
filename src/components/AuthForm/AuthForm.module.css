@@ -10,6 +10,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .logo {

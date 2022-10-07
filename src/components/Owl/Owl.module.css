@@ -37,7 +37,7 @@
   top: 34%;
   transform: rotate(-43deg) translate(-36px, -42px);
   transform-origin: bottom right;
-  transition: transform 1s ease;
+  transition: transform 0.7s ease;
 }
 
 .owlLeftWing.hide {
