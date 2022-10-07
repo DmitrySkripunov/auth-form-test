@@ -27,7 +27,6 @@ function AuthForm() {
       <label htmlFor="email">E-Mail</label>
       <Input
         type="email"
-        className={css.input}
         id="email"
         value={email}
         onChange={(evt) => setEmail(evt.target.value)}
@@ -37,7 +36,6 @@ function AuthForm() {
       <label htmlFor="password">Password</label>
       <Input
         type="password"
-        className={css.input}
         id="password"
         value={password}
         onFocus={() => setHide(true)}
