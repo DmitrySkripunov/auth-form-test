@@ -5,9 +5,7 @@ import AuthForm from './components/AuthForm/AuthForm';
 function App() {
   return (
     <main className={css.App}>
-      <section>
-        <AuthForm />
-      </section>
+      <AuthForm />
     </main>
   );
 }

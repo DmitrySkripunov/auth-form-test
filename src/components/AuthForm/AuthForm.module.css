@@ -1,11 +1,15 @@
 .root {
   position: relative;
-  width: 400px;
-  height: 460px;
+  width: clamp(310px, 100%, 400px);
+  min-height: 460px;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 1px 1px 10px #555555;
   padding: 35px 40px;
+  margin: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -54,4 +58,20 @@
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0.2em;
+}
+
+.signInButton:focus-visible {
+  outline: 2px solid #3f66ff;
+}
+
+.forgotPasswordLink {
+  margin-top: 24px;
+  color: #c3c0d4;
+  transition: color 0.2s ease;
+  align-self: center;
+  text-decoration: none;
+}
+
+.forgotPasswordLink:hover {
+  color: #6b639e;
 }

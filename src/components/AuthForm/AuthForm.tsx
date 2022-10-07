@@ -28,6 +28,7 @@ function AuthForm() {
       <Input
         type="email"
         id="email"
+        required
         value={email}
         onChange={(evt) => setEmail(evt.target.value)}
         postfix={<Envelope />}
@@ -37,6 +38,7 @@ function AuthForm() {
       <Input
         type="password"
         id="password"
+        required
         value={password}
         onFocus={() => setHide(true)}
         onBlur={() => setHide(false)}
@@ -45,6 +47,10 @@ function AuthForm() {
       />
 
       <button className={css.signInButton}>SIGN IN</button>
+
+      <a className={css.forgotPasswordLink} href="/forgot-password">
+        Forgot your password?
+      </a>
     </form>
   );
 }

@@ -1,4 +1,4 @@
-import { InputHTMLAttributes, useState } from 'react';
+import { InputHTMLAttributes } from 'react';
 import css from './Input.module.css';
 
 interface TInputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'className' | 'style'> {
@@ -6,12 +6,10 @@ interface TInputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'class
 }
 
 function Input({ postfix, ...props }: TInputProps) {
-  const [focused, setFocused] = useState(false);
-
   return (
     <div className={css.root}>
       <input className={css.input} {...props} />
-      <div className={`${css.background} ${focused ? css.focused : ''}`} />
+      <div className={css.background} />
       {postfix && <div className={css.postfix}>{postfix}</div>}
     </div>
   );
