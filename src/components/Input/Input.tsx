@@ -6,11 +6,12 @@ interface TInputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'class
 }
 
 function Input({ postfix, ...props }: TInputProps) {
-  const [active, setActive] = useState(false);
+  const [focused, setFocused] = useState(false);
+
   return (
     <div className={css.root}>
-      <div className={`${css.background} ${active ? css.active : ''}`} />
-      <input className={css.input} {...props} onClick={() => setActive(!active)} />
+      <input className={css.input} {...props} />
+      <div className={`${css.background} ${focused ? css.focused : ''}`} />
       {postfix && <div className={css.postfix}>{postfix}</div>}
     </div>
   );
